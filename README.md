@@ -13,6 +13,13 @@ Antes de iniciar o projeto, é preciso que instalemos as dependências necessár
   <li>Agora, para executar o aplicativo em seu dispositivo, baixe o app Expo Go (links abaixo) e scaneie o QR Code que foi gerado no primeiro terminal utilizando o aplicativo Expo.</li>
 </ol>
 
+### Algumas das telas do aplicativo:
+![Screenshot_9](https://user-images.githubusercontent.com/70178077/230531966-a8fe9e16-9aad-451e-90f7-32e6b678858f.png)
+![image](https://user-images.githubusercontent.com/70178077/230532167-a4c5efbb-0949-45ab-8455-80e039d25946.png)
+
+
+
+
 ### Links mencionados:
 Expo Go (IOS): https://apps.apple.com/br/app/expo-go/id982107779 <br>
 Expo Go (Android): https://play.google.com/store/apps/details?id=host.exp.exponent&hl=pt_BR&gl=US
