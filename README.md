@@ -14,8 +14,8 @@ Antes de iniciar o projeto, é preciso que instalemos as dependências necessár
 </ol>
 
 ### Algumas das telas do aplicativo:
-![Screenshot_9](https://user-images.githubusercontent.com/70178077/230531966-a8fe9e16-9aad-451e-90f7-32e6b678858f.png)
-![image](https://user-images.githubusercontent.com/70178077/230532167-a4c5efbb-0949-45ab-8455-80e039d25946.png)
+![Screenshot_9](https://github.com/Pauloviictorss/appReceitasMobile/assets/70178077/385dc4b0-0537-4c57-8e86-47b28981418a)
+![image](https://github.com/Pauloviictorss/appReceitasMobile/assets/70178077/8a86c5a1-1139-4013-92eb-b0cd32e95596)
 
 
 
