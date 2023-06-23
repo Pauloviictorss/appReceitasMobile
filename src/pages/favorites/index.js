@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react'
-import {Text, StyleSheet, SafeAreaView, FlatList} from 'react-native'
+import {Text, StyleSheet, SafeAreaView, FlatList, Image} from 'react-native'
 import { useIsFocused } from '@react-navigation/native'
 
 
 import { FoodList } from '../../components/foodlist'
 import { getFavorites } from '../../utils/storage'
+import { View } from 'moti'
 
 export function Favorites(){
     const [receipes, setReceipes] = useState([]);
@@ -35,7 +36,12 @@ export function Favorites(){
             <Text style={styles.title}>Receitas Favoritas</Text>
 
             {receipes.length === 0 && (
-                <Text>Você ainda não tem nenhuma receita salva.</Text>
+                <View style={styles.nothing}>
+                    <Image
+                    source={require('../../../assets/sadLike.png')}
+                    style={styles.cover}
+                    />
+                </View>
             )}
 
             <FlatList
@@ -55,11 +61,23 @@ const styles = StyleSheet.create({
         backgroundColor: '#F3F9FF',
         paddingStart: 14,
         paddingEnd: 14,
-        paddingTop: 36
+        paddingTop: 40
     },
     title:{
-        color: '#000',
+        color: '#FFF',
         fontWeight: 'bold',
-        fontSize: 24
+        fontSize: 24,
+        backgroundColor: '#FF0000',
+        padding: 10,
+        borderRadius: 5
+    },
+    nothing:{
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '85%',
+    },
+    cover:{
+        height: 300,
+        width: 300
     }
 })

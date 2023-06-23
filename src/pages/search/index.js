@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import {View, Text, StyleSheet, FlatList} from 'react-native'
+import {View, Text, StyleSheet, FlatList, Image} from 'react-native'
 import { useRoute } from '@react-navigation/native'
 
 import api from '../../services/api'
@@ -28,7 +28,14 @@ export function Search(){
                 data={receipes}
                 keyExtractor={ (item) => String(item.id) }
                 renderItem={( {item} ) => <FoodList data={item}/>}
-                ListEmptyComponent={() => <Text style={styles.text}>Não encontramos o que está buscando...</Text>}
+                ListEmptyComponent={() => 
+                    <View style={styles.nothing}>
+                    <Image
+                    source={require('../../../assets/sadSearch.png')}
+                    style={styles.cover}
+                    />
+                </View>
+                }
             />
         </View>
     )
@@ -42,7 +49,14 @@ const styles = StyleSheet.create({
         paddingEnd: 14,
         paddingTop: 14
     },
-    text:{
-        fontSize: 18
+    nothing:{
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '100%',
+        paddingTop: 120
+    },
+    cover:{
+        height: 300,
+        width: 300
     }
 })

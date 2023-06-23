@@ -39,7 +39,6 @@ export function Home(){
     return(
         <SafeAreaView style={styles.container}>
             <Logo/>
-
             <MotiText
                 style={styles.title}
                 from={{
@@ -75,17 +74,17 @@ export function Home(){
                     duration: 850
                 }}
             >
-                que combina com você</MotiText>
+                perfeita para você</MotiText>
 
             <View style={styles.form}>
                 <TextInput
-                    placeholder='Digite o nome da comida...'
+                    placeholder='O que quer comer hoje?'
                     style={styles.input}
                     value={inputValue}
                     onChangeText={(text) => setInputValue(text)}
                 />
                 <TouchableOpacity onPress={handleSearch}>
-                    <Ionicons name='search' size={28} color={'#4CBE6C'}/>
+                    <Ionicons name='search' size={28} color={'#FF0000'}/>
                 </TouchableOpacity>
             </View>
 

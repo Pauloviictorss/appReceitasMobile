@@ -11,7 +11,7 @@ export function Ingredients({ data }) {
 
 const styles = StyleSheet.create({
     container:{
-        backgroundColor: '#FFF',
+        backgroundColor: 'rgba(255, 0, 0, 0.09)',
         marginBottom: 14,
         flexDirection: 'row',
         justifyContent: 'space-between',

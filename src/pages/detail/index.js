@@ -61,7 +61,7 @@ export function Detail(){
         try{
             await Share.share({
                 url: "https://github.com/Pauloviictorss",
-                message: `Receita: ${route.params?.data.name}\nIngredientes: ${route.params?.data.total_ingredients}\nVi no app Receita Fácil.`
+                message: `Receita: ${route.params?.data.name}\nIngredientes: ${route.params?.data.total_ingredients}\nVi no app +Food.`
             })
         }catch(error){
             console.log(error);
@@ -86,7 +86,7 @@ export function Detail(){
                     <Text style={styles.ingredientsText}>Ingredientes: ({route.params?.data.total_ingredients})</Text>
                 </View>
                 <Pressable onPress={shareReceipe}>
-                    <Feather name='share-2' size={24} color={'#121212'}/>
+                    <Feather name='share-2' size={24} color={'#FFF'}/>
                 </Pressable>
             </View>
 
@@ -96,11 +96,6 @@ export function Detail(){
 
             <View style={styles.instructionsArea}>
                 <Text style={styles.instructionsText}>Modo de Preparo</Text>
-                <Feather
-                    name='arrow-down'
-                    size={24}
-                    color={'#FFF'}
-                />
             </View>
 
             {route.params?.data.instructions.map((item, index) => (
@@ -141,27 +136,32 @@ const styles = StyleSheet.create({
         fontSize: 18,
         marginTop: 14,
         fontWeight: 'bold',
-        color: '#000',
+        color: '#FFF',
         marginBottom: 4
     },
     ingredientsText:{
         marginBottom: 14,
-        fontSize: 16
+        fontSize: 16,
+        color: '#FFF',
     },
     headerDetails:{
+        backgroundColor: '#FF0000',
+        paddingHorizontal: 10,
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        marginBottom: 14
+        marginVertical: 14,
+        borderRadius: 5,
     },
     instructionsArea:{
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#4CBE6C',
+        backgroundColor: '#FF0000',
         padding: 8,
         borderRadius: 4,
-        marginBottom: 14
+        marginBottom: 14,
+        marginTop: 14
     },
     instructionsText:{
         fontSize: 18,

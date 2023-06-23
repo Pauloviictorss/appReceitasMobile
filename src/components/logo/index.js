@@ -20,26 +20,27 @@ export function Logo(){
             duration: 850
         }}
         >
-            <Text style={styles.logo}>Receita Fácil</Text>
+            <Text style={styles.logo}>+Food</Text>
         </View>
     )
 }
 
 const styles = StyleSheet.create({
     logoArea:{
-        backgroundColor: '#4CB36C',
+        backgroundColor: '#FF0000',
         alignSelf: 'flex-start',
         padding: 8,
         paddingLeft: 16,
         paddingRight: 20,
-        borderTopRightRadius: 8,
-        borderBottomLeftRadius: 8,
-        borderTopLeftRadius: 8,
-        borderBottomRightRadius: 32,
-        marginBottom: 8
+        borderTopRightRadius: 5,
+        borderBottomLeftRadius: 5,
+        borderTopLeftRadius: 5,
+        borderBottomRightRadius: 16,
+        marginBottom: 8,
+        width: '100%'
     },
     logo:{
-        fontSize: 18,
+        fontSize: 16,
         fontWeight: 'bold', 
         color: '#FFF'
     }
